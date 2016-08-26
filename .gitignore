@@ -1,0 +1,9 @@
+.idea/*
+.idea/workspace.xml
+*/*iml
+*iml
+*/target
+*eclipse*
+*prefs*
+.classpath
+.project

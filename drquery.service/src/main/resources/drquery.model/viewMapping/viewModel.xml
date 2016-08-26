@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<configuration>
+    <model modelId="F1" name="GRPS详单明细查询" process="defaultInvokeProcess" invoke="gprsProcess!processF1"
+           useCache="false">
+        <!--<field name="USER_TERM_BRAND" type="string" cname="USER_TERM_BRAND" escapeField="A1"/>-->
+    </model>
+    <model modelId="F2" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF2" useCache="false">
+    </model>
+    <model modelId="F3" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF3" useCache="true">
+    </model>
+    <model modelId="F4" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF3" useCache="true">
+    </model>
+    <model modelId="F5" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF3" useCache="true">
+    </model>
+    <model modelId="F6" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF6" useCache="false">
+        <field name="USER_TERM_BRAND" type="string" cname="USER_TERM_BRAND" escapeField="A1"/>
+    </model>
+    <model modelId="F7" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF6" useCache="false">
+        <field name="USER_TERM_BRAND" type="string" cname="USER_TERM_BRAND" escapeField="A1"/>
+    </model>
+    <model modelId="F8" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF6" useCache="false">
+    </model>
+    <model modelId="F11" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF11" useCache="false">
+        <!--app_name字段根据app_id转义得到,定义所有需要输出的字段-->
+        <field name="groupValueName" type="string" cname="groupValueName" escapeField="A11"></field>
+        <field name="groupValue" type="string" cname="groupValue" escapeField="toupercase"></field>
+        <field name="groupTotalFlow" type="string" cname="groupTotalFlow" escapeField="toupercase"></field>
+        <field name="groupRecordCount" type="string" cname="groupRecordCount" escapeField="toupercase"></field>
+    </model>
+    <model modelId="F11SD" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF11SD" useCache="false">
+        <!--app_name字段根据app_id转义得到,定义所有需要输出的字段,山东内部汇总接口-->
+        <field name="groupValueName" type="string" cname="groupValueName" escapeField="A11"></field>
+        <field name="groupValue" type="string" cname="groupValue" escapeField="toupercase"></field>
+        <field name="groupTotalFlow" type="string" cname="groupTotalFlow" escapeField="toupercase"></field>
+        <field name="groupRecordCount" type="string" cname="groupRecordCount" escapeField="toupercase"></field>
+    </model>
+    <model modelId="F12SD" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF12SD" useCache="false">
+        <!--app_name字段根据app_id转义得到,定义所有需要输出的字段,山东外部接口，按照appid百分比-->
+        <field name="groupValueName" type="string" cname="groupValueName" escapeField="A11"></field>
+        <field name="groupValue" type="string" cname="groupValue" escapeField="toupercase"></field>
+        <field name="groupTotalFlow" type="string" cname="groupTotalFlow" escapeField="toupercase"></field>
+        <field name="groupTotalFlowPercent" type="string" cname="groupTotalFlowPercent"
+               escapeField="toupercase"></field>
+    </model>
+    <model modelId="F17SD" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF17SD" useCache="false">
+        <!--app_name字段根据app_id转义得到,定义所有需要输出的字段，山东外部接口，按照site_id百分比，传入app_id-->
+        <field name="groupValueName" type="string" cname="groupValueName" escapeField="A11"></field>
+        <field name="groupValue" type="string" cname="groupValue" escapeField="toupercase"></field>
+        <field name="groupTotalFlow" type="string" cname="groupTotalFlow" escapeField="toupercase"></field>
+        <field name="groupTotalFlowPercent" type="string" cname="groupTotalFlowPercent"
+               escapeField="toupercase"></field>
+    </model>
+    <model modelId="F13" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF13" useCache="false">
+        <field name="startTime" type="string" cname="startTime" escapeField="A1"/>
+        <field name="endTime" type="string" cname="endTime" escapeField="A1"/>
+        <field name="appName" type="string" cname="appName" escapeField="K1"/>
+        <field name="appType" type="string" cname="appType" escapeField="K1"/>
+        <field name="mainDomain" type="string" cname="mainDomain" escapeField="A1"/>
+        <field name="apnId" type="string" cname="apnId" escapeField="A1"/>
+        <!-- <field name="termBrandName" type="string" cname="termBrandName" escapeField="K1"/>-->
+        <field name="imei" type="string" cname="imei" escapeField="K1"/>
+        <field name="browserType" type="string" cname="browserType" escapeField="K1"/>
+        <field name="flow" type="string" cname="flow" escapeField="A1"/>
+    </model>
+    <model modelId="F14" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF13" useCache="false">
+        <field name="startTime" type="string" cname="startTime" escapeField="A1"/>
+        <field name="endTime" type="string" cname="endTime" escapeField="A1"/>
+        <field name="appName" type="string" cname="appName" escapeField="K1"/>
+        <field name="rat" type="string" cname="rat" escapeField="K1"/>
+        <!--<field name="appType" type="string" cname="appType" escapeField="K1"/>-->
+        <!--<field name="mainDomain" type="string" cname="mainDomain" escapeField="A1"/>-->
+        <!--<field name="apnId" type="string" cname="apnId" escapeField="A1"/>-->
+        <!--<field name="termBrandName" type="string" cname="termBrandName" escapeField="A1"/>-->
+        <!--<field name="browserType" type="string" cname="browserType" escapeField="K1"/>-->
+        <field name="flow" type="string" cname="flow" escapeField="A1"/>
+        <field name="url" type="string" cname="url" escapeField="A1"/>
+        <field name="serverIp" type="string" cname="serverIp" escapeField="A1"/>
+        <field name="rat" type="string" cname="rat" escapeField="K1"/>
+        <field name="regionName" type="string" cname="regionName" escapeField="A1"/>
+    </model>
+    <model modelId="F15" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF13" useCache="false">
+        <field name="startTime" type="string" cname="startTime" escapeField="A1"/>
+        <field name="imeiSeg" type="string" cname="imeiSeg" escapeField="A1"/>
+        <field name="appName" type="string" cname="appName" escapeField="K1"/>
+        <field name="appType" type="string" cname="appType" escapeField="K1"/>
+        <field name="siteId" type="string" cname="siteId" escapeField="A1"/>
+        <field name="serviceHost" type="string" cname="apnId" escapeField="A1"/>
+        <field name="flow" type="string" cname="flow" escapeField="A1"/>
+        <field name="upFlow" type="string" cname="flow" escapeField="A1"/>
+        <field name="downFlow" type="string" cname="flow" escapeField="A1"/>
+    </model>
+    <model modelId="F13SD" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF13" useCache="false">
+        <field name="startTime" type="string" cname="startTime" escapeField="A1"/>
+        <field name="imeiSeg" type="string" cname="imeiSeg" escapeField="K1"/>
+        <!--field name="rat" type="string" cname="rat" escapeField="K1"/-->
+        <field name="appName" type="string" cname="appName" escapeField="K1"/>
+        <field name="appType" type="string" cname="appType" escapeField="K1"/>
+        <field name="siteId" type="string" cname="siteId" escapeField="K1"/>
+        <field name="serviceHost" type="string" cname="serviceHost" escapeField="A1"/>
+        <field name="flow" type="string" cname="flow" escapeField="A1"/>
+        <field name="upFlow" type="string" cname="upFlow" escapeField="A1"/>
+        <field name="downFlow" type="string" cname="downFlow" escapeField="A1"/>
+    </model>
+    <model modelId="F15SD" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF15SD" useCache="false">
+        <!--app_name字段根据app_id转义得到,定义所有需要输出的字段,山东汇总接口，同时按appid和siteid汇总 -->
+        <field name="groupValueName" type="string" cname="groupValueName" escapeField="A11"></field>
+        <field name="groupValue" type="string" cname="groupValue" escapeField="toupercase"></field>
+        <field name="groupTotalFlow" type="string" cname="groupTotalFlow" escapeField="toupercase"></field>
+        <field name="groupRecordCount" type="string" cname="groupRecordCount" escapeField="toupercase"></field>
+        <field name="groupTotalFlowPercent" type="string" cname="groupTotalFlowPercent"
+               escapeField="toupercase"></field>
+        <field name="accessMode" type="string" cname="accessMode" escapeField="K1"/>
+        <field name="appProtocol" type="string" cname="appProtocol" escapeField="K1"/>
+        <field name="accessModeId" type="string" cname="accessModeId" escapeField="toupercase"/>
+        <field name="appProtocolId" type="string" cname="appProtocolId" escapeField="toupercase"/>
+    </model>
+    <model modelId="F16SD" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF13" useCache="false">
+        <field name="startTime" type="string" cname="startTime" escapeField="A1"/>
+        <field name="appName" type="string" cname="appName" escapeField="K1"/>
+        <field name="appType" type="string" cname="appType" escapeField="K1"/>
+        <field name="siteId" type="string" cname="siteId" escapeField="K1"/>
+        <field name="serviceHost" type="string" cname="serviceHost" escapeField="A1"/>
+        <field name="imeiSeg" type="string" cname="imeiSeg" escapeField="K1"/>
+        <field name="flow" type="string" cname="flow" escapeField="A1"/>
+        <field name="upFlow" type="string" cname="upFlow" escapeField="A1"/>
+        <field name="downFlow" type="string" cname="downFlow" escapeField="A1"/>
+        <field name="accessMode" type="string" cname="accessMode" escapeField="K1"/>
+        <field name="appProtocolId" type="string" cname="appProtocolId" escapeField="toupercase"/>
+    </model>
+    <model modelId="F21" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF21" useCache="false">
+        <field name="appName" type="string" cname="appName" escapeField="K1"/>
+        <field name="appId" type="string" cname="siteId" escapeField="A1"/>
+        <field name="flow" type="string" cname="flow" escapeField="A1"/>
+        <field name="flowRate" type="string" cname="flowRate" />
+        <field name="appCount" type="string" cname="appCount" />
+        <field name="avgFlow" type="string" cname="avgFlow" />
+    </model>
+    <model modelId="F22" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF22" useCache="false">
+        <field name="startTime" type="string" cname="startTime" escapeField="A1"/>
+        <field name="flow" type="string" cname="flow" escapeField="A1"/>
+        <field name="flowRate" type="string" cname="flowRate" escapeField="A1"/>
+    </model>
+    <model modelId="F23" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF23" useCache="false">
+        <field name="HourId" type="string" cname="HourId" escapeField="A1"/>
+        <field name="flow" type="string" cname="flow" escapeField="A1"/>
+        <field name="flowRate" type="string" cname="flowRate" escapeField="A1"/>
+    </model>
+    <model modelId="F24" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF24" useCache="false">
+        <field name="appName" type="string" cname="appName" escapeField="K1"/>
+        <field name="appId" type="string" cname="siteId" escapeField="A1"/>
+        <field name="flow" type="string" cname="flow" escapeField="A1"/>
+        <field name="flowRate" type="string" cname="flowRate" />
+    </model>
+    <model modelId="F31" name="" process="defaultInvokeProcess" invoke="gprsProcess!processF31" useCache="false">
+        <field name="startTime" type="string" cname="startTime" escapeField="A1"/>
+        <field name="appName" type="string" cname="appName" escapeField="K1"/>
+        <field name="serviceHost" type="string" cname="serviceHost" escapeField="A1"/>
+        <field name="imeiSeg" type="string" cname="imeiSeg" escapeField="K1"/>
+        <field name="flow" type="string" cname="flow" escapeField="A1"/>
+        <field name="upFlow" type="string" cname="upFlow" escapeField="A1"/>
+        <field name="downFlow" type="string" cname="downFlow" escapeField="A1"/>
+        <field name="accessMode" type="string" cname="accessMode" escapeField="A16"/>
+    </model>
+</configuration>

@@ -1,0 +1,20 @@
+2015-09-24 09:50:39 [main][com.asiainfo.billing.drescaping.EscapingAssemble][44]-[ERROR] Check password Decrypt. Decrypt password file [db2pwd] failed.
+2015-09-24 09:50:39 [main][com.asiainfo.billing.drescaping.EscapingAssemble][44]-[ERROR] Check password Decrypt. Decrypt password file [db2pwd] failed.
+2015-09-24 09:50:39 [main][com.asiainfo.billing.drescaping.EscapingAssemble][44]-[ERROR] Check password Decrypt. Decrypt password file [db2pwd] failed.
+2015-09-24 09:50:39 [main][com.asiainfo.billing.drescaping.DBBean][53]-[ERROR] java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+2015-09-24 09:50:39 [main][com.asiainfo.billing.drescaping.DBBean][61]-[ERROR] Fail to create JDBC Connection from [jdbc:db2://10.1.252.69:50001/octest].
+2015-09-24 10:01:16 [main][com.asiainfo.billing.drescaping.EscapingAssemble][44]-[ERROR] Check password Decrypt. Decrypt password file [db2pwd] failed.
+2015-09-24 10:01:16 [main][com.asiainfo.billing.drescaping.EscapingAssemble][44]-[ERROR] Check password Decrypt. Decrypt password file [db2pwd] failed.
+2015-09-24 10:01:16 [main][com.asiainfo.billing.drescaping.EscapingAssemble][44]-[ERROR] Check password Decrypt. Decrypt password file [db2pwd] failed.
+2015-09-24 10:01:16 [main][com.asiainfo.billing.drescaping.DBBean][57]-[ERROR] java.sql.SQLException: No suitable driver found for jdbc:db2://10.1.252.69:50001/octest
+2015-09-24 10:01:16 [main][com.asiainfo.billing.drescaping.DBBean][61]-[ERROR] Fail to create JDBC Connection from [jdbc:db2://10.1.252.69:50001/octest].
+2015-09-24 10:17:20 [main][com.asiainfo.billing.drescaping.EscapingAssemble][44]-[ERROR] Check password Decrypt. Decrypt password file [db2pwd] failed.
+2015-09-24 10:17:20 [main][com.asiainfo.billing.drescaping.EscapingAssemble][44]-[ERROR] Check password Decrypt. Decrypt password file [db2pwd] failed.
+2015-09-24 10:17:20 [main][com.asiainfo.billing.drescaping.EscapingAssemble][44]-[ERROR] Check password Decrypt. Decrypt password file [db2pwd] failed.
+2015-09-24 10:17:20 [main][com.asiainfo.billing.drescaping.DBBean][53]-[ERROR] java.lang.ClassNotFoundException: com.ibm.db2.jcc.DB2Driver
+2015-09-24 10:17:20 [main][com.asiainfo.billing.drescaping.DBBean][61]-[ERROR] Fail to create JDBC Connection from [jdbc:db2://10.1.252.69:50001/octest].
+2015-09-24 10:34:50 [main][com.asiainfo.billing.drescaping.EscapingAssemble][44]-[ERROR] Check password Decrypt. Decrypt password file [db2pwd] failed.
+2015-09-24 10:34:50 [main][com.asiainfo.billing.drescaping.EscapingAssemble][44]-[ERROR] Check password Decrypt. Decrypt password file [db2pwd] failed.
+2015-09-24 10:34:50 [main][com.asiainfo.billing.drescaping.EscapingAssemble][44]-[ERROR] Check password Decrypt. Decrypt password file [db2pwd] failed.
+2015-09-24 10:34:50 [main][com.asiainfo.billing.drescaping.DBBean][57]-[ERROR] com.ibm.db2.jcc.am.mo: [jcc][t4][10107][11233][4.7.85] 不允许密码长度为 0。 ERRORCODE=-4461, SQLSTATE=42815
+2015-09-24 10:34:50 [main][com.asiainfo.billing.drescaping.DBBean][61]-[ERROR] Fail to create JDBC Connection from [jdbc:db2://10.1.252.69:50001/octest].
